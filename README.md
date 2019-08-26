@@ -1,0 +1,1 @@
+# Git project for courses of Mongo University
