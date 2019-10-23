@@ -1,0 +1,4 @@
+mongo:
+  - docker pull mongo
+  - docker run --name mdb -v ~/Library/dev/repository/mongo-university/M201/:/cbougeno/data -v ~/Library/dev/mongo/data/:/data/db -p 27017:27017 -d mongo
+  - docker exec -it mdb mongoimport -d m201 -c people --file /cbougeno/data/"Chapter 1"/people.json
